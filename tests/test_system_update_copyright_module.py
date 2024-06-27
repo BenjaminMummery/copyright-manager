@@ -11,7 +11,7 @@ class TestNothingToDo:
         """No files have been changed, nothing to check."""
         with cwd(git_repo.workspace):
             process: subprocess.CompletedProcess = subprocess.run(
-                ["add-copyright", "."], capture_output=True, text=True
+                ["update-copyright", "."], capture_output=True, text=True
             )
 
         assert process.returncode == 0, process.stdout
