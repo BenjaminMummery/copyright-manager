@@ -1,0 +1,55 @@
+---
+- id: add-copyright
+  name: Add copyright string to source files
+  description: Checks that source files have copyright strings. Adds the string
+    if necessary.
+  entry: add-copyright
+  language: python
+  always_run: true
+  stages: [commit]
+  types_or:
+    - c++
+    - c#
+    - css
+    - dart
+    - html
+    - java
+    - javascript
+    - kotlin
+    - lua
+    - markdown
+    - perl
+    - php
+    - python
+    - ruby
+    - rust
+    - scala
+    - sql
+    - swift
+- id: update-copyright
+  name: Update dates on copyright strings in source files
+  description: Parses copyright strings in source files, updating the date to the
+    current year.
+  entry: update-copyright
+  language: python
+  always_run: true
+  stages: [commit]
+  types_or:
+    - c++
+    - c#
+    - css
+    - dart
+    - html
+    - java
+    - javascript
+    - kotlin
+    - lua
+    - markdown
+    - perl
+    - php
+    - python
+    - ruby
+    - rust
+    - scala
+    - sql
+    - swift
